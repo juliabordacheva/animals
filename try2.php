@@ -19,9 +19,13 @@ $animals = array(
 $arrayFinal = array();
 foreach($animals as $areaName => $animalArray) {
     foreach ($animalArray as $animalName) {
-    	list($result1, $result2) = explode(", ", $animalName);
+    	if ($animalName == 2 ) {
+    	print_r($a = (explode(" ", $animalName)));
+    	 
 
-
+       } else {
+       	echo $arrayFinal;
+       }
         /*if (strpos($animalName, ' ') !== false) { 
             array_push($arrayFinal, $animalName);
         }*/
