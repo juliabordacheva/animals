@@ -19,22 +19,25 @@ $animals = array(
 $arrayFinal = array();
 foreach($animals as $areaName => $animalArray) {
     foreach ($animalArray as $animalName) {
-        if (strpos($animalName, ' ') !== false) { 
+    	list($result1, $result2) = explode(", ", $animalName);
+
+
+        /*if (strpos($animalName, ' ') !== false) { 
             array_push($arrayFinal, $animalName);
-        }
+        }*/
     }
 }
 print_r($arrayFinal);
 echo "<pre>";
 
 
- $a = implode(" ", $arrayFinal);/*Объединили массив с названиями из двух животных в одну строку*/
-print_r($a) . '<br>';
- $b = explode(" ", $a); /*разбили эту строку по словам*/
-print_r($b);
+ /*$a = implode(" ", $arrayFinal);*//*Объединили массив с названиями из двух животных в одну строку*/
+/*print_r($a) . '<br>';*/
+ /*$b = explode(" ", $a);*/ /*разбили эту строку по словам*/
+/*print_r($b);*/
 /*for ($i = 0; $i<24; $i+2) {
    echo $i;*/
-	$value1 = array_slice($b, 0, 2);
+	/*$value1 = array_slice($b, 0, 2);
 	$value2 = array_slice($b, 2, 2);
 	$value3 = array_slice($b, 4, 2);
 	$value4 = array_slice($b, 6, 2);
@@ -46,9 +49,9 @@ print_r($b);
 	$value10 = array_slice($b, 18, 2);
 	$value11 = array_slice($b, 20, 2);
 	$value12 = array_slice($b, 22, 2);
-
+*/
 /*}*/
-print_r($value1);
+/*print_r($value1);
 print_r($value2);
 print_r($value3);
 print_r($value4);
@@ -59,9 +62,9 @@ print_r($value8);
 print_r($value9);
 print_r($value10);
 print_r($value11);
-print_r($value12);
+print_r($value12);*/
 
-list($first1, $second1) = array_chunk($value1, 1);
+/*list($first1, $second1) = array_chunk($value1, 1);
 list($first2, $second2) = array_chunk($value2, 1);
 list($first3, $second3) = array_chunk($value3, 1);
 list($first4, $second4) = array_chunk($value4, 1);
@@ -72,17 +75,17 @@ list($first8, $second8) = array_chunk($value8, 1);
 list($first9, $second9) = array_chunk($value9, 1);
 list($first10, $second10) = array_chunk($value10, 1);
 list($first11, $second11) = array_chunk($value11, 1);
-list($first12, $second12) = array_chunk($value12, 1);
+list($first12, $second12) = array_chunk($value12, 1);*/
 
-$first_all = array_merge($first1, $first2, $first3, $first5, $first5, $first6, $first7, $first8, $first9, $first10, $first11, $first12);
+/*$first_all = array_merge($first1, $first2, $first3, $first5, $first5, $first6, $first7, $first8, $first9, $first10, $first11, $first12);
 $second_all = array_merge($second1, $second2, $second3, $second4, $second5, $second6, $second7, $second8, $second9, $second10, $second11, $second12);
 shuffle($first_all);
 shuffle($second_all);
 
 list($f1, $f2, $f3, $f4, $f5, $f6, $f7, $f8, $f9, $f10, $f11, $f12) = array_chunk($first_all, 1);
-list($s1, $s2, $s3, $s4, $s5, $s6, $s7, $s8, $s9, $s10, $s11, $s12) = array_chunk($second_all, 1);
+list($s1, $s2, $s3, $s4, $s5, $s6, $s7, $s8, $s9, $s10, $s11, $s12) = array_chunk($second_all, 1);*/
 
-$n1 = merge($f1, $s1);
+/*$n1 = merge($f1, $s1);
 $n2 = merge($f2, $s2);
 $n3 = merge($f3, $s3);
 $n4 = merge($f4, $s4);
@@ -93,9 +96,9 @@ $n8 = merge($f8, $s8);
 $n9 = merge($f9, $s9);
 $n10 = merge($f10, $s10);
 $n11 = merge($f11, $s11);
-$n12 = merge($f12, $s12);
+$n12 = merge($f12, $s12);*/
 
-print_r($n1);
+/*print_r($n1);
 print_r($n2);
 print_r($n3);
 print_r($n4);
@@ -106,7 +109,7 @@ print_r($n8);
 print_r($n9);
 print_r($n10);
 print_r($n11);
-print_r($n12);
+print_r($n12)
 /*list($fantastic1, $fantastic2) = array_chunk($b, ceil(count($b)/2));*/ /* разделили образовавшийся перемешанный массив на 2 штуки*/
 /*print_r($fantastic1);*//*
 print_r($fantastic2);
