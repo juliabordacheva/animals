@@ -16,23 +16,38 @@ $animals = array(
 );
 //
  
-$arrayFinal = array();
+/*$arrayFinal = array();*/
 foreach($animals as $areaName => $animalArray) {
     foreach ($animalArray as $animalName) {
-    	if ($animalName == 2 ) {
-    	print_r($a = (explode(" ", $animalName)));
-    	 
+    	$animalName = explode(" ", $animalName);
+    }
+}
+        
+  foreach ($animalName as $key => $value) {
+ 	$value =  count($animalName);
+ 		echo $value;
+ 	}
 
-       } else {
-       	echo $arrayFinal;
-       }
+ 	if ($value == 2) {
+ 		echo $value;
+ 	}
+ 
+ /* for ($animalName = 0; $animalName == 2; ) {
+  	     $key = count($key);
+  }
+  if ($key = 2) {
+  	print_r($key);
+  } else {
+    exit();
+
+  }*/
         /*if (strpos($animalName, ' ') !== false) { 
             array_push($arrayFinal, $animalName);
         }*/
-    }
-}
-print_r($arrayFinal);
-echo "<pre>";
+    
+
+/*print_r($arrayFinal);
+echo "<pre>";*/
 
 
  /*$a = implode(" ", $arrayFinal);*//*Объединили массив с названиями из двух животных в одну строку*/

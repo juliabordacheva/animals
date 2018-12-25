@@ -1,0 +1,2 @@
+alex;alex@shift.me;netologger
+niko;nikox@shift.me;netomanager
